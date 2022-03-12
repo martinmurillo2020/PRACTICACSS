@@ -1,0 +1,358 @@
+
+/* ----tamaño, tipografia, color, efectos y ubicacion de link de la parte superior--------*/
+header{background-color: rgba(255, 255, 255, 0.884);
+       backdrop-filter: blur(0.125rem);       /* efecto de tranlucido y tamaño del header */
+       -webkit-backdrop-filter: blur(0.625rem);
+       height:  4.5rem;}
+/*------------------------------------------------------------------------------------------*/
+.cabeza {display: grid;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-rows: 10% 25% 15% 10% repeat(2, 20%);  
+        grid-column-gap: 0rem;                                 
+        grid-row-gap: 0rem;}                                    /* ubicacion de vinculos */
+                                                                /* de la parte superior */
+    .vacio { grid-area: 1 / 1 / 2 / 2; }
+    .b1, .b2, .b3, .b4, .b5, .b6 { grid-area: 1 / 2 / 2 / 4; }
+    .vacio2 { grid-area: 1 / 4 / 2 / 5; }
+/*------------------------------------------------------------------------------------------*/
+.b1{margin-left: 3.9rem;
+    font-size: 1rem; 
+    font-family: 'montserrat', sans-serif; 
+    color: #3151cf;
+    padding-top: 0.55rem;}                                     /* tipografia, color, tamaño*/
+                                                                /* y ubicacion de los vinculos*/
+.b2, .b3, .b4, .b5 {font-family:'Be Vietnam Pro', sans-serif;
+                        font-size: 0.7rem;
+                        color: #6d7b93;
+                        letter-spacing: 3%;
+                        font-weight: 600;
+                        padding-top: 1.1rem;}
+/*------------------------------------------------------------------------------------------*/
+.botonhoax{background-color: #3151cf; 
+                 padding-top: 0.5rem; 
+                 padding-bottom: 0.5rem; 
+                 padding-left: 1rem;
+                 padding-right: 1rem;                           /* "boton" del vinculo HOAX */
+                 border-radius: 10%;
+                 font-family:'Be Vietnam Pro', sans-serif;
+                 font-size: 0.7rem;
+                 color: #ffffff;
+                 letter-spacing: 3%;
+                 font-weight: 600;
+                 text-decoration: none;}                      
+
+.vinculosheader{text-decoration: none; color: unset; }     
+/*------------------------------------------------------------------------------------------*/
+a:hover{box-shadow: 5px 10px 20px #6281fd; color: #0b0837;}                        
+
+.b2{margin-left: 40%;}                    /* efecto al pasar por encima de los vinculos */
+.b3{margin-left: 50%;}
+.b4{margin-left: 60.1%;}
+.b5{margin-left: 67.3%;}
+.b6{margin-left: 80.7%; margin-top: 1.5rem;}
+/* ----tamaño, tipografia, color, efectos y ubicacion de link de la parte superior--------*/
+
+/* -------tamaño y ubicacion de imagen enfermera-------------*/
+.contenedorimagen {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    grid-template-rows: 10% 25% 15% 10% repeat(2, 20%);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+    }
+    
+    .vacio3 { grid-area: 1 / 1 / 4 / 3; }
+    .vacio4 { grid-area: 1 / 4 / 4 / 5; }
+    .divimg1 { grid-area: 1 / 3 / 4 / 4; }
+
+.imagen1{width:30%;
+         position:absolute; top:1.2rem;
+         float: right;}
+figure{margin-top: 1.3%;
+margin-bottom: 0%;}
+/* -------tamaño y ubicacion de imagen enfermera-------------*/
+
+
+/* -------tipografia, color, tamaño y ubicacion de fight y let-------------*/
+.seccion1{margin-left: 20.5rem;
+}
+
+.fight{font-size: 2.1rem;
+font-family: 'montserrat', sans-serif;
+color: #1f3e72;
+padding-top: 5%;}
+
+.let{font-size: 0.7rem;
+font-family: 'Be Vietnam Pro', sans-serif;
+color: #6d7b93;
+letter-spacing: 0.005rem;
+font-weight: 200;
+line-height: 1.2375rem;}
+/* -------tipografia, color, tamaño y ubicacion de fight y let-------------*/
+
+
+/* ---------best protection Y Selected Vaccines + logos (escudo y estrella)---------------*/ 
+.parent {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    grid-template-rows: 10% 30% repeat(2, 10%) repeat(2, 20%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .vacio5 { grid-area: 3 / 1 / 4 / 2; }
+    .vacio6 { grid-area: 3 / 3 / 4 / 4; }
+    .vacio7 { grid-area: 3 / 4 / 4 / 5; }
+    .seccion2 { grid-area: 3 / 2 / 4 / 3; }
+
+.seccion2 {display: grid;
+           grid-template-columns: 20px 113px 20px 200px 400px;
+           grid-template-rows: 50px;
+           grid-column-gap: 0px;
+           grid-row-gap: 0px;
+           margin-left: 3.9rem;
+           color: #1f3e72;
+           font-family: 'Be Vietnam Pro', sans-serif;
+           font-size: 0.52rem;
+           font-weight: 600;
+           letter-spacing: 4%;
+           margin-top: 0rem;}
+        
+        .escudo { grid-area: 1 / 1 / 2 / 2; width: 100%; margin-top: 1px;}
+        .best { grid-area: 1 / 2 / 2 / 3; margin-left: 10px;}
+        .estrella { grid-area: 1 / 3 / 2 / 4; width: 100%; margin-top: 1px;}
+        .selected { grid-area: 1 / 4 / 2 / 5; margin-left: 10px }
+        .div5 { grid-area: 1 / 5 / 2 / 6; }          
+/* ---------best protection Y Selected Vaccines + logos (escudo y estrella)---------------*/ 
+        
+
+/* ---------triangulos grises---------------*/
+.trianguloderecho{width:6%;
+                  position:absolute; 
+                  top:18.6rem; 
+                  left: 37.05rem;}
+
+.trianguloarriba{width:7.5%;
+                  position:absolute; 
+                  top: 5.5rem; 
+                  left: 18.5rem;}
+/* ---------triangulos grises---------------*/ 
+
+
+/* ---------logo de vacunas---------------*/
+.vacunas{position:absolute; 
+    top: 40rem; 
+    left: 20rem;height: 20%;}
+/* ---------logo de vacunas---------------*/
+
+
+/*---------Schedule your vaccinations-----------*/
+.h33{position: absolute;
+     top: 29rem;
+     left: 23.5rem;
+     color: #1f3e72;
+     font-family: 'Hind Siliguri', sans-serif;
+     font-size: 1rem;}
+
+.logoreloj{position: absolute;
+           top: 30rem;
+           left: 21.1rem;
+           box-shadow: 2px 6px 5px #ccd6ff;
+           width: 1.5rem;}
+
+
+/*---------Schedule your vaccinations-----------*/
+
+/*---------ubicacion del fomulario de vacunas-----------*/
+form{padding-top: 7.5rem;}
+
+.formu{background-color: rgba(255, 255, 255, 0.884);
+    backdrop-filter: blur(0.125rem);      
+    -webkit-backdrop-filter: blur(0.125rem);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 0.25rem;
+    border-style: solid #fff; 
+    box-shadow: 5px 10px 20px #ccd6ff; 
+    width: 31rem;
+    position: absolute; left: 21.05rem ;
+    z-index: 1;}
+
+.estado, .fecha1, .vacu {border: 0; 
+                         appearance: none;
+                         color: #1f3e72;
+                         font-family: 'Hind Siliguri', sans-serif;
+                         font-size: 1rem; 
+                         background-color: transparent; 
+                         width: 130px;}
+
+.formulario{border-style: solid #fff;}                    
+
+.submint1{
+    padding: 9px 20px 9px 20px;
+    border-width:  0;
+    font-size: 0.7rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #eff2ff;
+    letter-spacing: 0.005rem;
+    font-weight: 600;
+    background-color: #3151cf;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 2rem;
+    left: 27rem;}
+
+.submint1:hover{box-shadow: 5px 10px 20px #718dfd;}   
+.estado:hover,.fecha1:hover,.vacu:hover{box-shadow: 5px 10px 20px hsl(0, 98%, 49%);} 
+
+.fecha1{width: 11rem;}
+
+.tit1,.tit2,.tit3{display: inline; 
+  font-size: 0.8rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #6d7b93;
+  letter-spacing: 0.005rem;
+  font-weight: 500;
+  line-height: 1.2375rem;
+  }
+
+.tit1{padding-left: 2.5rem;}
+.tit2{margin-left: 5.5rem;}
+.tit3{margin-left: 5rem;}
+
+
+
+
+.logoloc{position: absolute;
+         top: 33.3rem;
+         left: 23rem;
+         width: 1.5rem;
+         z-index: 2;}
+
+.logodate{position: absolute;
+         top: 33.3rem;
+         left: 32rem;
+         width: 1.5rem;
+         z-index: 2;  }
+
+.logovacc{position: absolute;
+         top: 33.3rem;
+         left: 39rem;
+         width: 1.5rem;
+         z-index: 2;}
+
+
+/*---------ubicacion del fomulario de vacunas-----------*/
+
+/*---------In order to avoid any doubts about-----------*/
+.h4t{font-size: 1.5rem;
+    font-family: 'montserrat', sans-serif;
+    color: #1f3e72;
+    margin-top: 18rem;
+    margin-left: 20.5rem;
+
+    }
+
+.inorder{font-size: 0.7rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #6d7b93;
+    letter-spacing: 0.005rem;
+    font-weight: 500;
+    line-height: 1.2375rem;
+    margin-left: 20.5rem;
+    padding-top: 0;} 
+    
+.trianguloderecho2{width:5.7%;
+    position:absolute; 
+    top:46.2rem; 
+    left: 62.7rem;}
+
+/*---------In order to avoid any doubts about-----------*/
+
+.cuadros {
+    display: grid;
+    grid-template-columns: 20% repeat(4, 15%) 20%;
+    grid-template-rows: 0%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 3.9rem;
+    margin-top: 4.375rem;}
+    
+    .cuadros1 { grid-area: 1 / 2 / 2 / 3;}
+
+    .cuadros2 { grid-area: 1 / 3 / 2 / 4;}
+
+    .cuadros3 { grid-area: 1 / 4 / 2 / 5;}
+                                          
+
+    .cuadros4 { grid-area: 1 / 5 / 2 / 6;}
+
+.vaccinehas,.covid,.thebene,.covid2{font-size: 0.5rem;
+                                        font-family: 'Be Vietnam Pro', sans-serif;
+                                        color: #6d7b93;
+                                        letter-spacing: 0.015rem;
+                                        font-weight: 500;
+                                        line-height: 1rem;}
+
+.minimize,.forming,.protecting,.creating{font-size: 0.9rem;
+                                         font-family: 'Be Vietnam Pro', sans-serif;
+                                         color: #1f3e72;
+                                         letter-spacing: 0.005rem;
+                                         font-weight: 500;}
+
+.cuadros1,.cuadros2,.cuadros3,.cuadros4{box-shadow: 5px 10px 20px #ccd6ff; 
+                                        border-radius: 0.5rem;padding-bottom: 170px;
+                                        border-top-width: 3px;
+                                        padding-top: 10px;
+                                        padding-bottom: 210px;
+                                        padding-left: 20px;
+                                        margin-left: 10px;
+                                        margin-right: 18px;}
+                                        
+
+.cuadros1:hover,.cuadros2:hover,.cuadros3:hover,.cuadros4:hover{box-shadow: 5px 10px 20px #1f3e72;}
+
+/*---------cuadrados-----------*/
+
+.ico1,.ico2,.ico3,.ico4{width: 2.5rem;}
+
+.dfooter {
+    display: grid;
+    grid-template-columns: 22% 30% 10% 10% 10% 30%;
+    grid-template-rows: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foo1 { grid-area: 1 / 2 / 2 / 3; }
+    .foo2 { grid-area: 1 / 3 / 2 / 4; }
+    .foo3 { grid-area: 1 / 4 / 2 / 5; }
+    .foo4 { grid-area: 1 / 5 / 2 / 6; }
+
+ul,.foovacc2{font-size: 0.7rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #6d7b93;
+    letter-spacing: 0.005rem;
+    font-weight: 600;
+    list-style: none;
+    line-height: 1.8rem;}
+
+.about,.company,.support{font-size: 0.9rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #10274e;
+    letter-spacing: 0.005rem;
+    font-weight: 800;
+    padding-left: 40px;
+    padding-top: 1rem}
+
+.foovacc{margin-left: 4.6rem;
+    font-size: 1.1rem; 
+    font-family: 'montserrat', sans-serif;
+    font-weight: 800 ; 
+    color: #153ddb;
+    padding-top: 1rem;
+    margin-left: 0%;}
+
+footer{background-color:#dce3ff;}
